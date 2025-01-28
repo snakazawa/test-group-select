@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select with Groups</title>
+    <!-- Bootstrap CSS (via CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<form>
+    <div class="form-group">
+        <div><label>License<span style="color: rgb(255, 0, 0); font-weight: bold;">*</span></label></div>
+        <select class="form-control">
+            <option value="">Choose...</option>
+            <option value="NO_LICENSE">No license</option>
+            <optgroup label="Content">
+                <option value="CC0">CC0 1.0 Universal</option>
+                <option value="CCBY">CC BY 4.0 Attribution International</option>
+                <option value="CCBYSA">CC BY-SA 4.0 Attribution-ShareAlike</option>
+                <option value="CCBYND">CC BY-ND 4.0 Attribution—NoDerivatives</option>
+                <option value="CCBYNC">CC BY-NC 4.0 Attribution—NonCommercial</option>
+                <option value="CCBYNCSA">CC BY-NC-SA 4.0 Attribution—NonCommercial—ShareAlike</option>
+                <option value="CCBYNCND">CC BY-NC-ND 4.0 Attribution—NonCommercial—NoDerivatives</option>
+                <option value="AFL">Academic Free License (AFL) 3.0</option>
+                <option value="PD">Public Domain</option>
+            </optgroup>
+            <optgroup label="Code - Permissive">
+                <option value="MIT">MIT License</option>
+                <option value="Apache2">Apache License 2.0</option>
+                <option value="BSD2">BSD 2-Clause "Simplified" License</option>
+                <option value="BSD3">BSD 3-Clause "New"/"Revised" License</option>
+            </optgroup>
+            <optgroup label="Code - Copyleft">
+                <option value="GPL3">GNU General Public License (GPL) 3.0</option>
+                <option value="GPL2">GNU General Public License (GPL) 2.0</option>
+            </optgroup>
+            <optgroup label="Code - Other">
+                <option value="Artistic2">Artistic License 2.0</option>
+                <option value="Eclipse1">Eclipse Public License 1.0</option>
+                <option value="LGPL3">GNU Lesser General Public License (LGPL) 3.0</option>
+                <option value="LGPL2_1">GNU Lesser General Public License (LGPL) 2.1</option>
+                <option value="Mozilla2">Mozilla Public License 2.0</option>
+            </optgroup>
+            <option value="OTHER">Other</option>
+        </select>
+        <div style="color: rgb(255, 0, 0); display: none;"></div>
+    </div>
+</form>
+
+<!-- Bootstrap JavaScript Bundle (with Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
